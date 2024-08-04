@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Righteous&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Play:wght@400;700&family=Righteous&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Play:wght@400;700&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(imagens/universo.fundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+:root{
+    --cor1:#05F2F2;
+    --cor2:#0583F2;
+    --cor3:#035AA6;
+    --cor4:#023059;
+    --cor5:#011526;
+
+    --fonte-padrao:"Mulish", sans-serif;
+    --fonte-destaque: "Play", sans-serif;
+    --fonte-titulo:"Merriweather Sans", sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor4), var(--cor5) );
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+}
+
+header > h1{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.589);
+}
+
+header p{
+    color: rgba(255, 255, 255, 0.685);
+    font-family:var(--fonte-padrao);
+    font-size: 1em;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    padding-bottom: 30px;
+    text-shadow:2px 2px 0px rgba(0, 0, 0, 0.479) ;
+}
+
+nav{
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 15px;
+}
+
+nav > a{
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.671);
+    margin-right: 15px;
+    transition-duration: 0.5s;
+    padding: 5px;
+    font-size: 1em;
+    font-family: var(--fonte-titulo);
+}
+
+nav > a:hover{
+    background-color: #0583F2;
+    color: #05F2F2;
+}
+
+main{
+    background-color: white;
+    max-width: 950px;
+    min-width: 320px;
+    height: 2000px;
+    margin-bottom: 30px;
+    margin: auto;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.904);
+    background-color: #32343581;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+main a:hover{
+    color: #05F2F2;
+    text-decoration: underline;
+}
+
+a.externos:after{
+    content: '\1F517';
+}
+
+.paragrafos{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 2em;
+    font-size: 1.1em;
+    font-family:var(--fonte-padrao);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.575);
+    display: inline-block;
+    padding: 5px;
+    color: white;
+}
+
+.primeiro-titulo-h1{
+    font-family: var(--fonte-destaque);
+    font-size: 2.1em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.781);
+    color: #ffffff;
+    margin-left: 20px;
+    padding: 5px;
+
+}
+
+section.imagens{
+    background-color: rgb(39, 39, 39);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section#img001{
+    background-image: url(imagens/universo.fundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
