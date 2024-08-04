@@ -90,6 +90,17 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
 }
 
+main img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
 main a{
     text-decoration: none;
     font-weight: bold;
@@ -115,7 +126,7 @@ a.externos:after{
     text-align: justify;
     text-indent: 25px;
     line-height: 2em;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-family:var(--fonte-padrao);
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.575);
     display: inline-block;
@@ -143,8 +154,29 @@ section.imagens{
 
 section#img001{
     background-image: url(imagens/universo.fundo.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+section#img002{
+    background-image: url(imagens/universo.fundo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
 }
+
+.segundo-titulo-h2{
+    font-family: var(--fonte-destaque);
+    font-size: 2.1em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.781);
+    color: #ffffff;
+    margin-left: 20px;
+    padding: 5px;
+}
+
