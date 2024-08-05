@@ -141,7 +141,22 @@ a.externos:after{
     color: #ffffff;
     margin-left: 20px;
     padding: 5px;
+}
 
+#titulo-sem-imagem{
+    font-family: var(--fonte-destaque);
+    font-size: 2.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sem-imagem{
+    background-image: linear-gradient(to right,#0583F2, transparent);
+    border-radius: 5px;
 }
 
 section.imagens{
@@ -164,6 +179,26 @@ section#img001{
 section#img002{
     background-image: url(imagens/universo.fundo.jpg);
     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+section#img003{
+    background-image: url(imagens/universo.fundo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+section#img004{
+    background-image: url(imagens/universo.fundo.jpg);
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
