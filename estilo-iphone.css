@@ -81,7 +81,6 @@ main{
     background-color: white;
     max-width: 950px;
     min-width: 320px;
-    height: 2000px;
     margin-bottom: 30px;
     margin: auto;
     padding: 20px;
@@ -128,10 +127,11 @@ a.externos:after{
     line-height: 2em;
     font-size: 1.2em;
     font-family:var(--fonte-padrao);
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.575);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.452);
     display: inline-block;
     padding: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.637);
 }
 
 .primeiro-titulo-h1{
@@ -143,20 +143,27 @@ a.externos:after{
     padding: 5px;
 }
 
-#titulo-sem-imagem{
+#titulo-com-imagem{
     font-family: var(--fonte-destaque);
     font-size: 2.2em;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
-    color: #000000;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.849);
+    color: #ffffff;
     text-align: center;
     margin-top: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.637);
 }
 
-.sem-imagem{
-    background-image: linear-gradient(to right,#0583F2, transparent);
-    border-radius: 5px;
+.com-imagem{
+    background-image: url(imagens/universo.fundo.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 section.imagens{
@@ -206,6 +213,36 @@ section#img004{
     margin-top: 20px;
 }
 
+section#img005{
+    background-image: url(imagens/universo.fundo.jpg);
+    background-position: bottom bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+section#img006{
+    background-image: url(imagens/universo.fundo.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+section#img007{
+    background-image: url(imagens/universo.fundo.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 .segundo-titulo-h2{
     font-family: var(--fonte-destaque);
     font-size: 2.1em;
@@ -213,5 +250,22 @@ section#img004{
     color: #ffffff;
     margin-left: 20px;
     padding: 5px;
+}
+
+div.videos{
+    position: relative;
+    background-color: #012350;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom:58% ;
+    margin-top: 10px;
+}
+
+div.videos > iframe{
+    position: absolute;
+    top:5% ;
+    left:5% ;
+    width:90% ;
+    height: 90%;
 }
 
