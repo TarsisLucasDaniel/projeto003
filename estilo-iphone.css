@@ -269,3 +269,45 @@ div.videos > iframe{
     height: 90%;
 }
 
+aside{
+    background-color: #041E40;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.274);
+}
+
+.paragrafo-aside{
+    color: white;
+    line-height: 1.8em;
+    font-family: var(--fonte-padrao);
+}
+
+.paragrafo-aside:hover{
+    text-decoration: underline;
+}
+
+aside > ul{
+    list-style-position: inside;
+    list-style-type: '\2714';
+    columns: 2;
+    color: rgba(255, 255, 255, 0.884);
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte-titulo);
+}
+
+footer{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
