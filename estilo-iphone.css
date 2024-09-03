@@ -104,7 +104,8 @@ main a{
     text-decoration: none;
     font-weight: bold;
     color:rgba(255, 255, 255, 0.904);
-    background-color: #32343581;
+    background-color: #323435a9;
+    border-radius: 5px;
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 3px;
@@ -112,8 +113,21 @@ main a{
 }
 
 main a:hover{
-    color: #05F2F2;
-    text-decoration: underline;
+    color: #000000;
+    background-color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+strong{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+strong:hover{
+    color: black;
+    text-shadow: 1px 1px 0px rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 a.externos:after{
@@ -141,6 +155,7 @@ a.externos:after{
     color: #ffffff;
     margin-left: 20px;
     padding: 5px;
+    letter-spacing: 7px;
 }
 
 #titulo-com-imagem{
@@ -250,6 +265,7 @@ section#img007{
     color: #ffffff;
     margin-left: 20px;
     padding: 5px;
+    letter-spacing: 7px;
 }
 
 div.videos{
@@ -280,10 +296,10 @@ aside{
     color: white;
     line-height: 1.8em;
     font-family: var(--fonte-padrao);
-}
-
-.paragrafo-aside:hover{
-    text-decoration: underline;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px black;
 }
 
 aside > ul{
@@ -291,15 +307,37 @@ aside > ul{
     list-style-type: '\2714';
     columns: 2;
     color: rgba(255, 255, 255, 0.884);
+    margin-right: -100px;
 }
 
 aside > h3{
     background-color: var(--cor4);
     color: white;
-    padding: 10px;
+    font-size: 1.7em;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
     font-family: var(--fonte-titulo);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+abbr{
+    text-decoration: none;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+    line-height: 40px;
+    font-family: var(--fonte-titulo);
+}
+
+abbr:hover{
+    text-shadow: 1px 1px 0px  rgb(0, 0, 0);
+    background-color: #000a16;
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 footer{
