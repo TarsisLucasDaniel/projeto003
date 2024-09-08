@@ -116,6 +116,7 @@ main a:hover{
     color: #000000;
     background-color: white;
     text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 5px 0px black;
 }
 
 strong{
@@ -307,7 +308,7 @@ aside > ul{
     list-style-type: '\2714';
     columns: 2;
     color: rgba(255, 255, 255, 0.884);
-    margin-right: -100px;
+    
 }
 
 aside > h3{
@@ -315,12 +316,12 @@ aside > h3{
     color: white;
     font-size: 1.7em;
     padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
     font-family: var(--fonte-titulo);
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 abbr{
@@ -341,11 +342,35 @@ abbr:hover{
 }
 
 footer{
+    width: 100%;
+    font-family: var(--fonte-destaque);
     background-color: #000000;
     color: white;
     text-align: center;
-    margin-top: 20px;
-    padding: 5px;
-    font-size: 0.8em;
+    margin-top: 30px;
 }
 
+#paragrafo-footer{
+    margin-left:10px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+#link-footer{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+#link-footer:hover{
+    color: #ffffff;
+    padding: 5px;
+    background-color: #011777;
+    border-radius: 5px;
+    border: 2px solid rgb(17, 0, 255);
+    letter-spacing: 1px;
+    font-weight: bold;
+    outline: 3px solid rgb(3, 0, 197);
+}
