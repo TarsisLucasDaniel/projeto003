@@ -103,6 +103,7 @@ main img.pequena{
     max-width: 350px;
     display: block;
     margin: auto;
+    border-radius: 5px;
 }
 
 main a{
@@ -150,9 +151,13 @@ a.externos:after{
     font-family:var(--fonte-padrao);
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.452);
     display: inline-block;
-    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 3px;
 }
 
 .primeiro-titulo-h1{
@@ -171,13 +176,13 @@ a.externos:after{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.849);
     color: #ffffff;
     text-align: center;
-    margin-top: 20px;
     padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: underline;
+    padding-bottom: 10px;
+    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.637);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    margin-bottom: -17px;
 }
 
 .com-imagem{
@@ -308,7 +313,7 @@ aside{
     color: white;
     line-height: 1.8em;
     font-family: var(--fonte-padrao);
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 20px;
     margin-top: 10px;
     text-shadow: 1px 1px 2px black;
@@ -333,6 +338,7 @@ aside > h3{
     border-radius: 10px 10px 0px 0px;
     font-family: var(--fonte-titulo);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    letter-spacing: 2px;
 }
 
 abbr{
