@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Righteous&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Play:wght@400;700&family=Righteous&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Play:wght@400;700&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Righteous&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Play:wght@400;700&family=Righteous&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Play:wght@400;700&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 *{
     padding: 0px;
@@ -24,6 +24,9 @@ body{
     --fonte-destaque: "Play", sans-serif;
     --fonte-titulo:"Merriweather Sans", sans-serif;
     --fonte-titulo-header:"Protest Guerrilla", sans-serif;
+    --fonte-titulo-tabela:"Kanit", sans-serif;
+    --fonte-numeros-tabela:"Roboto Mono", monospace;
+    --fonte-texto-tabela:"Rubik", sans-serif;
 }
 
 header{
@@ -358,6 +361,102 @@ abbr:hover{
     border-radius: 5px;
     margin-left: 5px;
     box-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+#sessão-tabela{
+    background-color: #012350c9;
+    max-width: 1000px;
+    min-width: 400px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+    padding-left: 6px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+#titulo-tabela{
+    background-image: linear-gradient(to right, black,  transparent);
+    color:white ;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.699);
+    font-family: var(--fonte-titulo-tabela);
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: -6px;
+    margin-top: -10px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    max-width: 900px;
+    min-width: 420px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+th{
+    background-color: rgba(0, 0, 0, 0.788);
+    font-size: 1.4em;
+    border: 0.3px solid black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    font-family: var(--fonte-titulo-tabela);
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+td{
+    background-color: rgba(0, 0, 0, 0.507);
+    color: rgba(255, 255, 255, 0.822);
+    border: 0.3px solid black;
+    padding: 10px;
+}
+
+.numeros-tabela{
+    font-family: var(--fonte-numeros-tabela);
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.numeros-tabela:hover{
+    color: rgba(0, 0, 0, 0.836);
+}
+
+.nomes-modelos{
+    font-family: var(--fonte-titulo);
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+}
+
+.nomes-modelos:hover{
+    color: #035AA6;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+    transition-duration: 0.2s;
+}
+
+.média-numero{
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+    font-family: var(--fonte-numeros-tabela);
+    text-align: center;
+}
+
+.texto-tabela{
+    font-family: var(--fonte-texto-tabela);
+    color: rgba(255, 255, 255, 0.795);
+    line-height: 25px;
+    text-align: justify;
 }
 
 footer{
