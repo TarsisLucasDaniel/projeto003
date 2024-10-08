@@ -89,7 +89,6 @@ nav > a:hover{
 main{
     background-color: rgba(255, 255, 255, 0.137);
     max-width: 950px;
-    min-width: 320px;
     margin-bottom: 30px;
     margin: auto;
     padding: 20px;
@@ -329,7 +328,6 @@ aside > ul{
     list-style-type: '\2714';
     columns: 2;
     color: rgba(255, 255, 255, 0.884);
-    
 }
 
 aside > h3{
