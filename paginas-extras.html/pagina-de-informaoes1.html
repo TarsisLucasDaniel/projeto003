@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pagina 1</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -14,21 +14,31 @@
             padding: 0%;
         }
 
-        #caixa-macs-iphone{
+        main{
+            background-color: rgb(255, 255, 255);
+            max-width: 950px;
             margin: auto;
-            max-width:950px ;
-            min-width: 400px;
+            padding-bottom: 0px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
         }
 
+        #picture-imagem{
+            margin-left: -37px;
+        }
     </style>
 </head>
 <body>
-    <div class="caixa-macs-iphone">
-        <picture>
-            <source media="(max-width:400px )" srcset="imagens-paginas-extras/apple-mac.pequena.jpg">
-            <img src="imagens-paginas-extras/apple-mac.grande.jpg" alt="">
-        </picture>
-    </div>
+    
+        <main>
+            <picture id="picture-imagem">
+                <source media="(max-width:400px )" srcset="imagens-paginas-extras/apple-mac.pequena.jpg">
+                <img src="imagens-paginas-extras/apple-mac.grande.jpg" alt="">
+            </picture>
+        </main>
+   
     
 </body>
 </html>
