@@ -17,28 +17,29 @@
         main{
             background-color: rgb(255, 255, 255);
             max-width: 950px;
+            min-height: 400px;
+            margin-bottom: 30px;
             margin: auto;
-            padding-bottom: 0px;
-            padding-top: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
-            
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
         }
 
-        #picture-imagem{
-            margin-left: -37px;
+        main img{
+          width: 100%;
         }
+
     </style>
 </head>
 <body>
     
         <main>
             <picture id="picture-imagem">
-                <source media="(max-width:400px )" srcset="imagens-paginas-extras/apple-mac.pequena.jpg">
+                <source media="(max-width:400px )" srcset="">
                 <img src="imagens-paginas-extras/apple-mac.grande.jpg" alt="">
             </picture>
         </main>
-   
-    
+
 </body>
 </html>
