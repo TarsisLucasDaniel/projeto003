@@ -1,0 +1,140 @@
+@charset "UFT-8"; @import url(fonts.css);
+
+:root{
+    --cor1:#05F2F2;
+    --cor2:#0583F2;
+    --cor3:#035AA6;
+    --cor4:#023059;
+    --cor5:#011526;
+
+    --fonte-padrao:"Mulish", sans-serif;
+    --fonte-destaque: "Play", sans-serif;
+    --fonte-titulo:"Merriweather Sans", sans-serif;
+    --fonte-titulo-header:"Protest Guerrilla", sans-serif;
+    --fonte-titulo-tabela:"Kanit", sans-serif;
+    --fonte-numeros-tabela:"Roboto Mono", monospace;
+    --fonte-texto-tabela:"Rubik", sans-serif;
+}
+
+@media print{
+    html{
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.5;
+    }
+    
+    header > h1{
+        color: black;
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    header > p{
+        color: black;
+        font-size: 1.2em;
+        font-weight: 500;
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    .paragrafos > a{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .videos{
+        display: none;
+    }
+    
+    aside{
+        display: none;
+    }
+    
+    #caixa-informação{
+        display: none;
+    }
+    
+    iframe{
+        display: none;
+    }
+    
+    #paragrafo-footer > a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (min-widht:481px) and (max-width:768px){
+       
+}
+
+@media screen and (min-width:769px) and (max-width:1400px){
+
+    header > h1{
+        font-size: 3.5em;
+        letter-spacing: 10px;
+    }
+
+    header > p{
+        font-size: 20px;
+    }
+
+    nav{
+        padding: 20px;
+    }
+
+    nav > a{
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    main a:hover{
+        transition-duration: 0.5s;
+        color: #000000;
+        background-color: white;
+        text-shadow: 1px 1px 1px black;
+        box-shadow: 2px 5px 0px black;
+    }
+
+    .paragrafos{
+        font-size: 1.8em;
+    }
+
+    strong:hover{
+        transition-duration: 0.5s;
+        color: rgb(75, 75, 75);
+    }
+
+    section.imagens > .primeiro-titulo-h1{
+        font-size: 2.5em;
+        text-indent: 25px;
+        letter-spacing: 5px;
+    }
+
+    section.imagens > .segundo-titulo-h2{
+        font-size: 2.5em;
+        letter-spacing: 1px;
+        text-indent: 25px;
+    }
+
+    #terceiro-titulo-h1{
+        font-size: 2.8em;
+    }
+
+    #quarto-titulo-h1{
+        font-size: 2.8em;
+    }
+   
+}
