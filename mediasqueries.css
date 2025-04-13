@@ -72,16 +72,71 @@
 
 }
 
-@media screen and (min-widht:481px) and (max-width:768px){
-
-
-
-
-
-    #caixa-informação{
-        display: block;
+@media screen and (min-width:481px) and (max-width:768px){
+    header > h1{
+        font-size: 2.5em;
+        letter-spacing: 1px;
     }
-       
+
+    header > p{
+        font-size: 18px;
+    }
+
+    nav{
+        padding:17px ;
+    }
+    
+    nav > a{
+        font-size: 19px;
+    }
+
+    nav > a:hover{
+        background-color: #0583f2d5;
+        color: #000000;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.459);
+        padding: 7px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .paragrafos{
+        font-size: 1.2em;
+    }
+
+    section.imagens > .primeiro-titulo-h1{
+        font-size: 1.8em;
+        text-indent: 25px;
+        letter-spacing: 2px;
+    }
+
+    section.imagens > .segundo-titulo-h2{
+        font-size: 1.5em;
+    }
+
+    #terceiro-titulo-h1{
+        font-size: 1.8em;
+    }
+
+    #quarto-titulo-h1{
+        font-size: 1.8em;
+    }
+
+    aside > .quarto-titulo-h3{
+        font-size: 1.8em;
+    }
+
+    aside > .paragrafo-aside{
+        font-size: 1.2em;
+    }
+
+    abbr{
+        font-size: 1.2em;
+    }
+
+    #titulo-tabela{
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1400px){
@@ -102,6 +157,15 @@
     nav > a{
         font-size: 20px;
         margin: 15px;
+    }
+
+    nav > a:hover{
+        background-color: #0583f2d5;
+        color: #000000;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.459);
+        padding: 7px;
+        letter-spacing: 1px;
+        font-weight: bold;
     }
 
     main{
@@ -220,5 +284,4 @@
         text-align: center;
     }
 
-   
 }
