@@ -109,6 +109,10 @@ main img.pequena{
     border-radius: 5px;
 }
 
+.img-grande{
+    max-height: 550px;
+}
+
 main a{
     text-decoration: none;
     font-weight: bold;
@@ -292,10 +296,11 @@ section#img007{
 div.videos{
     position: relative;
     background-color: #012350;
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
+    margin: 10px -20px 20px -20px;
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-bottom:58% ;
-    margin-top: 10px;
 }
 
 div.videos > iframe{
@@ -317,7 +322,7 @@ aside{
     color: white;
     line-height: 1.8em;
     font-family: var(--fonte-padrao);
-    font-size: 1.2em;
+    font-size: 15px;
     margin-bottom: 20px;
     margin-top: 10px;
     text-shadow: 1px 1px 2px black;
@@ -333,7 +338,7 @@ aside > ul{
 aside > h3{
     background-color: var(--cor4);
     color: white;
-    font-size: 1.7em;
+    font-size: 1.3em;
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -346,30 +351,19 @@ aside > h3{
 
 abbr{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 17px;
     text-shadow: 1px 1px 0px rgb(0, 0, 0);
     line-height: 40px;
     font-family: var(--fonte-titulo);
 }
 
-abbr:hover{
-    transition-duration: 0.4s;
-    text-shadow: 1px 1px 0px  rgb(0, 0, 0);
-    background-color: #000a16;
-    padding: 7px;
-    border-radius: 5px;
-    margin-left: 5px;
-    box-shadow: 1px 1px 2px rgb(255, 255, 255);
-}
-
 #titulo-tabela{
     background-image: linear-gradient(to right, black,  transparent);
     color:white ;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.699);
     font-family: var(--fonte-titulo-tabela);
     font-weight: normal;
-    letter-spacing: 2px;
     text-align: left;
     margin-right: 10px;
     margin-left: -6px;
@@ -380,7 +374,7 @@ abbr:hover{
 
 table{
     border-collapse: collapse;
-    max-width: 900px;
+    max-width: 1200px;
     min-width: 420px;
     margin: auto;
     margin-top: 15px;
@@ -392,14 +386,12 @@ table{
     margin-top: 30px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
-    padding-left: 6px;
-    padding-right: 10px;
-    padding-bottom: 15px;
+    padding: 5px;
 }
 
 th{
     background-color: rgba(0, 0, 0, 0.788);
-    font-size: 1.4em;
+    font-size: 1.2em;
     border: 0.3px solid black;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -416,76 +408,76 @@ td{
     background-color: rgba(0, 0, 0, 0.507);
     color: rgba(255, 255, 255, 0.822);
     border: 0.3px solid black;
-    padding: 10px;
+    padding: 5px;
+    text-align: justify;
 }
 
-.numeros-tabela{
+td.numeros-tabela{
     font-family: var(--fonte-numeros-tabela);
+    font-size:14px;
+    padding: 0px;
     letter-spacing: 1px;
     text-align: center;
     color: rgba(255, 255, 255, 0.781);
 }
 
-.numeros-tabela:hover{
+td.numeros-tabela:hover{
     color: rgba(0, 0, 0, 0.836);
 }
 
-.nomes-modelos{
+td.nomes-modelos{
     font-family: var(--fonte-titulo);
+    font-size: 13px;
     letter-spacing: 1px;
     text-align: center;
     color: white;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
-.nomes-modelos:hover{
+td.nomes-modelos:hover{
     color: #035AA6;
     text-shadow: 1px 1px 0px rgb(0, 0, 0);
     transition-duration: 0.2s;
 }
 
-.média-numero{
+td.média-numero{
     color: rgb(0, 162, 255);
     font-weight: bold;
     font-family: var(--fonte-numeros-tabela);
     text-align: center;
 }
 
-.texto-tabela{
+td.texto-tabela{
     font-family: var(--fonte-texto-tabela);
+    font-size: 1em;
     color: rgba(255, 255, 255, 0.795);
     line-height: 25px;
     text-align: justify;
 }
 
+#caixa-informação{
+    display: none;
+}
+
 footer{
-    width: 100%;
+    padding: 10px;
     font-family: var(--fonte-destaque);
+    font-size: 1.3em;
     background-color: #000000;
     color: white;
     text-align: center;
     margin-top: 30px;
 }
 
-#paragrafo-footer{
-    margin-left:10px ;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.2em;
-    line-height: 30px;
-}
-
 #link-footer{
     color: white;
+    font-weight: normal;
     text-decoration: none;
-    box-sizing: border-box;
-    padding: 5px;
-    box-shadow: 2px 2px 5px white;
+    transition-duration: 0.5s;
 }
 
 #link-footer:hover{
-    color: #ffffff;
-    box-shadow: 2px 2px 10px white;
-    border-radius: 5px;
-    border: 2px solid rgb(255, 255, 255);
+    color: #003cff;
     transition: transform .3s border 2s;
 }
