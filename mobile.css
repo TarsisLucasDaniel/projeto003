@@ -159,7 +159,7 @@ a.externos:after{
 
 .segundo-titulo-h2{
     font-family: var(--fonte-destaque);
-    font-size: 1.1em;
+    font-size: 1em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.781);
     color: #ffffff;
     text-indent: 20px;
@@ -176,6 +176,8 @@ a.externos:after{
     text-align: center;
     padding-top: 5px;
     padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.637);
     border-top-left-radius: 5px;
@@ -291,11 +293,9 @@ section#img007{
 div.videos{
     position: relative;
     background-color: #012350;
-    margin: 10px -20px 20px -20px;
-    padding-top: 60px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom:58% ;
+    margin: 20px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom:65% ;
 }
 
 div.videos > iframe{
